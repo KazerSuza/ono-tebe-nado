@@ -15,22 +15,22 @@
   padding: 44px 36px 40px 24.5px;
 }
 
-.header__links-list-item_no-bullit {
-  list-style: none;
-}
-
 .header__links-list-item {
   list-style: circle;
   letter-spacing: 0.25px;
 }
 
-.navigation__link {
-  text-decoration: none;
+.header__links-list-item_no-bullit {
+  list-style: none;
 }
 
-.navigation__link_underlined {
+.header__link {
   text-decoration: none;
   border-bottom: 1px solid;
+}
+
+.header__link_active {
+  border: none;
 }
 
 .header__logo-image {
@@ -39,18 +39,23 @@
 }
 
 .adress {
-  list-style: none;
   align-self: center;
   line-height: 1.35;
   justify-self: end;
+  font-style: normal;
 }
 
 .header__address {
   padding-right: 62px;
 }
 
-.address__item {
-  font-style: normal;
+.address__list {
+  list-style: none;
+}
+
+.address__link {
+  text-decoration: none;
+  border-bottom: 1px solid;
 }
 
 .cover {
@@ -77,18 +82,19 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 30px;
+  display: block;
 }
 
 .aligned-text_center {
-  display: block;
   text-align: center;
-  line-height: 1.4;
+  line-height: 1;
+  margin-top: 20px;
 }
 
 .aligned-text_right {
-  display: block;
   text-align: end;
   line-height: 1;
+  margin-top: 20px;
 }
 
 .letter-spacing-extended {
@@ -152,30 +158,25 @@
   flex-direction: column;
   position: relative;
   z-index: -2;
+  background-position: center;
+  background-size: cover;
+  justify-content: space-between;
+  min-height: 563px;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
-  gap: 241.5px;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  gap: 95px;
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
-  display: block;
   padding: 51px 40px 0;
   color: #fff;
   font-size: 22px;
@@ -201,6 +202,8 @@
 }
 
 .lots__look-more-link {
+  text-decoration: none;
+  border-bottom: 1px solid;
   font-size: 20px;
   font-weight: 400;
   margin-left: 40px;
@@ -269,6 +272,15 @@
 
 .footer__menu-list {
   list-style: none;
+}
+
+.footer__link {
+  text-decoration: none;
+  border-bottom: 1px solid;
+}
+
+.footer__link_active {
+  border: none;
 }
 
 .footer__social-list {
